@@ -1,3 +1,11 @@
+-- GROUP ID : 504301df-4b18-eb11-90f0-d8d385fce79e
+--1	2301878076	Maryanto
+--2	2301877470	Edward Yose
+--3	2301910026	Benedictus Visto Kartika
+--4	2301885983	Vincent Fanditama Wijaya
+
+-- SOAL BAGIAN B : Query to create the database system
+
 create database BakMovie
 use bakmovie
 
@@ -90,4 +98,5 @@ CREATE TABLE [Review]
 	FOREIGN KEY (UserID) REFERENCES [User] (ID),
 	FOREIGN KEY (MovieID) REFERENCES Movie (ID)
 );
+
 
