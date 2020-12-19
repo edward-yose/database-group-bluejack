@@ -7,9 +7,6 @@
 -- SOAL BAGIAN D : Query to simulate the transactions processes
 
 USE BakMovie
-GO
-
---BEGIN TRAN
 
 INSERT INTO [SalesTransaction] 
 	(ID, UserID, TransactionDate)
@@ -30,8 +27,3 @@ INSERT INTO [Review]
 	(UserID, MovieID, RecommendStatus, Content, [Date])
 VALUES
 	('USR007', 'MOV003', 'Recommended', 'it is very good to watch this movie, their horror scene were terrific', GETDATE())
-
---ROLLBACK
-
-SELECT * FROM SalesTransaction
-SELECT * FROM Review
