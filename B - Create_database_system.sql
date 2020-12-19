@@ -6,11 +6,9 @@
 
 -- SOAL BAGIAN B : Query to create the database system
 
-create database BakMovie
-use bakmovie
+CREATE database BakMovie
+USE bakmovie
 
-BACKUP DATABASE BakMovie
-TO DISK = 'D:\Documents\bak file\BakMovie.bak';
 
 CREATE TABLE [User]
 (
